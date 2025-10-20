@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bajka Bikes | Vi vækker sovende cykler til live</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      color: #3a2c1e;
+      background: url('A_website_homepage_for_Bajka_Bikes_features_a_digi.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(255, 248, 242, 0.85);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #E85C3A;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #3a2c1e;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #E85C3A;
+    }
+
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background: rgba(232, 92, 58, 0.4);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      margin: 2rem;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .hero p {
+      margin: 1rem 0 2rem;
+      font-size: 1.2rem;
+    }
+
+    .btn-primary {
+      background-color: #FFC66D;
+      color: #3a2c1e;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #E85C3A;
+      color: #fff;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 2rem;
+      border-radius: 15px;
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      color: #E85C3A;
+      margin-bottom: 2rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product {
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h4 {
+      margin: 1rem 0 0.5rem;
+      color: #E85C3A;
+    }
+
+    .product p {
+      font-size: 0.9rem;
+      padding: 0 1rem 1rem;
+    }
+
+    footer {
+      background-color: rgba(58, 44, 30, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #FFC66D;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bajka Bikes</h1>
+    <nav>
+      <a href="#home">Forside</a>
+      <a href="#bikes">Cykler</a>
+      <a href="#story">Om os</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Vi vækker sovende cykler til live — med farver, fantasi og kærlighed.</h2>
+    <p>Oplev cykler, der har fået nyt liv og ny sjæl – hver enkelt genfødt med håndværk, varme og et strejf af eventyr.</p>
+    <button class="btn-primary">Se cyklerne</button>
+  </section>
+
+  <section class="section" id="bikes">
+    <h3>Udvalgte cykler</h3>
+    <div class="products">
+      <div class="product">
+        <img src="bike1.jpg" alt="Bycykel i varme farver">
+        <h4>Solskinscruiser</h4>
+        <p>En glad orange bycykel med vintage-detaljer – perfekt til små eventyr gennem byens gader.</p>
+      </div>
+      <div class="product">
+        <img src="bike2.jpg" alt="Efterårscykel i gyldne farver">
+        <h4>Efterårsturen</h4>
+        <p>Gyldne toner og bløde linjer – skabt til rolige søndagsture og varme farver i vinden.</p>
+      </div>
+      <div class="product">
+        <img src="bike3.jpg" alt="Farverig cykel">
+        <h4>Regnbuedrøm</h4>
+        <p>En farverig cykel, malet som et eventyr, klar til at bringe smil og liv på din vej.</p>
+      </div>
+       <div class="product">
+        <img src="bike4.jpg" alt="Farverig cykel i varme farver">
+        <h4>Cruiser</h4>
+        <p>En bycykel med vintage-detaljer – perfekt til små eventyr gennem byens gader.</p>
+      </div>
+       <div class="product">
+        <img src="bike5.jpg" alt="Bycykel 5">
+        <h4>Cruiser5</h4>
+        <p>Perfekt til små eventyr gennem byens gader.</p>
+         </div> 
+         <div class="product">
+        <img src="bike6.jpg" alt="Bycykel6">
+        <h4>Solcykel</h4>
+        <p>En blå bycykel med vintage-detaljer – perfekt til små eventyr gennem byens gader.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="story">
+    <h3>Om Bajka Bikes</h3>
+    <p>
+      Bajka betyder eventyr – og det er præcis, hvad vi ønsker at skabe. Vi giver nyt liv til gamle cykler med kærlighed, kreativitet og stærk service. Hver cykel bliver en ny fortælling – et lille eventyr på to hjul.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bajka Bikes | Vi vækker sovende cykler til live</p>
+    <p>
+      <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Kontakt</a>
+    </p>
+  </footer>
+
+</body>
+</html>
